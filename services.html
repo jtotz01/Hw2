@@ -1,0 +1,203 @@
+<! DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+        *
+        {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; 
+        }
+        
+        .navbar{
+            width: 100%;
+            height: 75px;
+            margin-top: 0px;
+            /* margin: auto; */
+            background-color: #000;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        .icon{
+            float: left;
+        }
+
+        .logo{
+            color: #ff7200;
+            font-size: 35px;
+            font-family: Arial;
+            padding-left: 15px;
+            padding-top: 10px;
+            margin-top: 5px
+            box-sizing: border-box;
+        }
+        
+        
+
+
+        .container
+        {
+            /* width: 1100px; */
+            width: 100%
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            padding-left:50px;
+        }
+
+        .container .box
+        {
+            position: relative;
+            width: 320px;
+            background: #fff;
+            padding: 100px 40px 60px;
+            box-shadow: 0 15px 45px rgba(0,0,0,.1);  
+        }
+        
+
+        .container .box:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; 
+            background: #ff7200;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s;
+        }
+
+        .container .box:hover:before {
+            transform: scaleY(1);
+            transform-origin: bottom;
+            transition: transform 0.5s;
+        }
+
+        .container .box h2
+        {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            font-size: 4em;
+            font-weight: 800;
+            z-index: 1;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .container .box:hover h2
+        {
+            opacity: 1;
+            color: #fff;
+            transform: translateY(-40px); 
+        }
+
+        .container .box:hover h3
+        {
+            position: relative;
+            font-size: 1.5em;
+            z-index: 2;
+            color: #333;
+            transition: 0.5s; 
+        }
+
+        .container .box:hover p,
+        .container .box:hover p 
+        {
+            position: relative;
+            /* font-size: 1.5em; */
+            z-index: 2;
+            color: #555;
+            transition: 0.5s; 
+        }
+
+        .container .box:hover h3 
+        {
+            color: #fff; 
+        }
+        
+        
+                
+        footer {
+            color: #ff7200;
+            font-family: Arial;
+            font-size: 35px; 
+            text-align: center;
+            padding-top: 20px; 
+            
+        }
+    </style>
+
+
+<html>
+
+
+
+<!-- Nav Bar-->
+<div class="navbar">
+    <div class="icon">
+        <h2 class="logo"><b>Totz</b>Enterprises</h2>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+</div> 
+
+    <body>
+         <div class="container">
+            <div class ="box">
+            <h2>01</h2>
+            <h3>Advisory</h3>
+            <p> Totz offers an opportunity for small to large size
+                businesses to raise capital. Our deal size ranges from 
+                $1 thousand to $1 billion in enterprise value. 
+            </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class ="box">
+            <h2>02</h2>
+            <h3>Debt Capital Markets</h3>
+            <p> Totz is a recognized market leader, providing capital 
+                markets advisory and transaction execution services to growth companies. 
+                With a client-centric approach, we commit to delivering the firm’s resources 
+                before, during and after a successful capital markets transaction. 
+            </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class ="box">
+            <h2>03</h2>
+            <h3>M&A</h3>
+            <p> Totz is a leading M&A advisor with a long history of serving 
+                the market. Our leadership position is driven by seasoned, 
+                sector-focused bankers delivering insightful advice and skilled
+                 transaction execution. Our track record of success and longstanding 
+                 client relationships attest to the strength of our approach. 
+
+
+            </p>
+            </div>
+        </div> 
+    </body> 
+    
+    <footer>
+        <!-- <p style="color: #ff7200 ; font-family: Arial; font-size: 35px; 
+        text-align: center; padding-top: 20px; "> TotzEnterprises </p> -->
+        <p >Totz Enterprises</p>
+    </footer>
+
+
+</html>
